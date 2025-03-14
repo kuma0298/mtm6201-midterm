@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-links .active {
+    color: #ff5733;
+}
+
+.signup-btn {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Course Details Section */
+.course-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: left;
+    background-color: #fff6f0;
+}
+
+.course-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.course-info {
+    max-width: 500px;
+    padding-left: 50px;
+}
+
+.course-info h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+}
+
+.course-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.course-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.course-info span {
+    font-weight: 600;
+    color: #ff5733;
+}
+
+.enroll-btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .course-details {
+        flex-direction: column;
+        text-align: center;
+    }
+    .course-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .course-info {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
